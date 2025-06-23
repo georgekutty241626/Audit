@@ -1,0 +1,48 @@
+{
+    "dev":
+    {
+        "user": "SVC_GCP_BIEIM_ABC",
+        "project_id":"swanalytics-dev",
+        "account":"iz34205.us-east4.gcp",
+        "warehouse":"SVC_DE_TST_WH_XS",
+        "database":"bieim_log_dev_db",
+        "schema":"log",
+        "meta_table":"METADATA_LOGGING",
+        "error_table" : "AUDIT_ERROR_LOGGING",
+        "base_path":["landing/us-bank","landing/tms","landing/sap-bw", "landing/test"],
+        "control_table_path":"gs://swanalytics-bieim-dev-01/logging/control_table/logging_main_controls.csv",
+        "sender" : "bieim_ops@southwire.com", 
+        "receiver" : "tulasidhar.mathamsetti@southwire.com, hari.devarapally@southwire.com"
+    },
+    "tst":
+    {
+        "user": "SVC_GCP_BIEIM_ABC",
+        "project_id":"swanalytics-tst",
+        "account":"iz34205.us-east4.gcp",
+        "warehouse":"SVC_DE_TST_WH_XS",
+        "database":"bieim_log_tst_db",
+        "schema":"log",
+        "meta_table":"METADATA_LOGGING",
+        "error_table" : "AUDIT_ERROR_LOGGING",
+        "base_path":["landing/us-bank","landing/tms","landing/sap-bw"],
+        "control_table_path":"gs://swanalytics-bieim-tst-01/logging/control_table/logging_main_controls.csv",
+        "sender" : "bieim_ops@southwire.com", 
+        "receiver" : "bieim_alerts@southwire.com, hari.devarapally@southwire.com, tulasidhar.mathamsetti@southwire.com"
+
+    },
+    "prd":
+    {
+        "user": "SVC_GCP_BIEIM_ABC",
+        "project_id":"swanalytics-prd",
+        "account":"iz34205.us-east4.gcp",
+        "warehouse":"SVC_DE_TST_WH_XS",
+        "database":"bieim_log_prd_db",
+        "schema":"log",
+        "meta_table":"METADATA_LOGGING",
+        "error_table" : "AUDIT_ERROR_LOGGING",
+        "base_path":["landing/us-bank","landing/tms","landing/sap-bw"],
+        "control_table_path":"gs://swanalytics-bieim-prd-01/logging/control_table/logging_main_controls.csv",
+        "sender" : "bieim_ops@southwire.com", 
+        "receiver" : "bieim_alerts@southwire.com, hari.devarapally@southwire.com, tulasidhar.mathamsetti@southwire.com"
+    }
+}
